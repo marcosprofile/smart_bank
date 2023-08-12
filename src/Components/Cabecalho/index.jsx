@@ -1,20 +1,27 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import bank_logo from "../../assets/images/bank_logo.svg";
+import {
+  StyledHeader,
+  Logo,
+  BtnCabecalho,
+} from './Cabecalho.styled';
+
+import { ActionsContainer } from '../UI';
 
 const Cabecalho = () => {
   return (
-    <div className="cabecalho">
-      <img className="imagem-logo" src={bank_logo} alt="Logo Smart Bank" />
-      <div>
-        <a className="btn-secundario" href="#Ajuda">
+    <StyledHeader>
+      <Logo src={bank_logo} alt="Logo Smart Bank" />
+      <ActionsContainer>
+        <BtnCabecalho primary href="#Ajuda">
           Ajuda
-        </a>
-        <a className="btn-primario" href="#Sair" >
+        </BtnCabecalho>
+        <BtnCabecalho href="#Sair" >
           Sair
-        </a>
-      </div>
-    </div>
+        </BtnCabecalho>
+      </ActionsContainer>
+    </StyledHeader>
   );
 };
 

@@ -2,16 +2,21 @@ import React from "react";
 
 import Titulo from "../Titulo";
 import Conta from "../Conta";
+import Extrato from "../Extrato";
 
-const Container = () => {
+import {
+  Container,
+  Conteudo,
+} from "./Container.styled";
+
+export default function ContainerWrapper() {
   return (
-    <div className="container">
+    <Container>
       <Titulo>Olá Marcos Ferreira!</Titulo>
-      <section className="conteudo">
+      <Conteudo>
         <Conta />
-      </section>
-    </div>
+        <Extrato />
+      </Conteudo>
+    </Container>
   );
 };
-
-export default Container;
