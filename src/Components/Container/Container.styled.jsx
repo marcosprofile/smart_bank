@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background-color: ${({ theme }) => theme.body};
-  min-height: 90vh;
+  min-height: 90.2vh;
   padding: 0px 15vw;
 `;
 
